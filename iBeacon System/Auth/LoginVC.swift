@@ -42,7 +42,7 @@ class LoginVC: UIViewController {
                 self?.showErrorAlert(message: error.localizedDescription)
             } else {
                 UIView.transition(with: UIApplication.shared.keyWindow!, duration: 0.3, options: .transitionFlipFromLeft, animations: {
-                    UIApplication.shared.keyWindow?.rootViewController = ViewController()
+                    UIApplication.shared.keyWindow?.rootViewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "ViewController")
                 }, completion: nil)
             }
         }

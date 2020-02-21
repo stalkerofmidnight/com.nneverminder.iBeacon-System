@@ -11,7 +11,6 @@
 		E252A07B23FD392400E331A2 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E252A07A23FD392300E331A2 /* GoogleService-Info.plist */; };
 		E252A07D23FF98D700E331A2 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E252A07C23FF98D700E331A2 /* LoginVC.swift */; };
 		E2EA53DC23FD35F50077C5BE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2EA53DB23FD35F50077C5BE /* AppDelegate.swift */; };
-		E2EA53DE23FD35F50077C5BE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2EA53DD23FD35F50077C5BE /* SceneDelegate.swift */; };
 		E2EA53E023FD35F50077C5BE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2EA53DF23FD35F50077C5BE /* ViewController.swift */; };
 		E2EA53E323FD35F50077C5BE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E2EA53E123FD35F50077C5BE /* Main.storyboard */; };
 		E2EA53E523FD35F60077C5BE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E2EA53E423FD35F60077C5BE /* Assets.xcassets */; };
@@ -26,7 +25,6 @@
 		E252A07C23FF98D700E331A2 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 		E2EA53D823FD35F50077C5BE /* iBeacon System.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iBeacon System.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2EA53DB23FD35F50077C5BE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		E2EA53DD23FD35F50077C5BE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		E2EA53DF23FD35F50077C5BE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		E2EA53E223FD35F50077C5BE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E2EA53E423FD35F60077C5BE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -85,7 +83,6 @@
 			children = (
 				E252A07E23FF98DA00E331A2 /* Auth */,
 				E2EA53DB23FD35F50077C5BE /* AppDelegate.swift */,
-				E2EA53DD23FD35F50077C5BE /* SceneDelegate.swift */,
 				E2EA53DF23FD35F50077C5BE /* ViewController.swift */,
 				E2EA53E123FD35F50077C5BE /* Main.storyboard */,
 				E2EA53E423FD35F60077C5BE /* Assets.xcassets */,
@@ -225,7 +222,6 @@
 				E2EA53E023FD35F50077C5BE /* ViewController.swift in Sources */,
 				E2EA53DC23FD35F50077C5BE /* AppDelegate.swift in Sources */,
 				E252A07D23FF98D700E331A2 /* LoginVC.swift in Sources */,
-				E2EA53DE23FD35F50077C5BE /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
