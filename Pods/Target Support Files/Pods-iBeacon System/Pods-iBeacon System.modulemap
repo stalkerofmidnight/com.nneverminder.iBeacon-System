@@ -1,6 +1,0 @@
-framework module Pods_iBeacon_System {
-  umbrella header "Pods-iBeacon System-umbrella.h"
-
-  export *
-  module * { export * }
-}
