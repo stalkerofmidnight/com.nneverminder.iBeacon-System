@@ -12,10 +12,15 @@
 		7A8F56EC24307CE8009F21A9 /* Extenstions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A8F56EB24307CE8009F21A9 /* Extenstions.swift */; };
 		7A8F56EF24308439009F21A9 /* ASLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A8F56EE24308439009F21A9 /* ASLabel.swift */; };
 		7A8F56F1243084C8009F21A9 /* NotificationsVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A8F56F0243084C8009F21A9 /* NotificationsVM.swift */; };
+		7A8F56F424308A6B009F21A9 /* ProfileTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A8F56F324308A6B009F21A9 /* ProfileTVC.swift */; };
+		7A8F56FC2430ED8A009F21A9 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A8F56FB2430ED8A009F21A9 /* HomeVC.swift */; };
+		7A8F57002430EDF3009F21A9 /* Professor.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7A8F56FF2430EDF3009F21A9 /* Professor.storyboard */; };
+		7A8F57032430F1E9009F21A9 /* HomeTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A8F57012430F1E9009F21A9 /* HomeTVCell.swift */; };
+		7A8F57042430F1E9009F21A9 /* HomeTVCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7A8F57022430F1E9009F21A9 /* HomeTVCell.xib */; };
 		7AED605A242F6B1900142B9A /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AED6059242F6B1800142B9A /* Colors.swift */; };
 		7AED6061242F6C4900142B9A /* NotificationsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AED6060242F6C4900142B9A /* NotificationsVC.swift */; };
 		7AED6064242F6C7800142B9A /* BaseVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AED6063242F6C7800142B9A /* BaseVC.swift */; };
-		7AED606A242F741200142B9A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7AED6069242F741200142B9A /* Main.storyboard */; };
+		7AED606A242F741200142B9A /* Student.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7AED6069242F741200142B9A /* Student.storyboard */; };
 		7AED606E242F7A1E00142B9A /* NotificationsEmptyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AED606D242F7A1E00142B9A /* NotificationsEmptyView.swift */; };
 		C87C354261CF4C46FAE0B645 /* Pods_iBeacon_System.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 890D0503AE72FD1F038EE4F4 /* Pods_iBeacon_System.framework */; };
 		E252A07B23FD392400E331A2 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E252A07A23FD392300E331A2 /* GoogleService-Info.plist */; };
@@ -34,10 +39,15 @@
 		7A8F56EB24307CE8009F21A9 /* Extenstions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extenstions.swift; sourceTree = "<group>"; };
 		7A8F56EE24308439009F21A9 /* ASLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASLabel.swift; sourceTree = "<group>"; };
 		7A8F56F0243084C8009F21A9 /* NotificationsVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationsVM.swift; sourceTree = "<group>"; };
+		7A8F56F324308A6B009F21A9 /* ProfileTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileTVC.swift; sourceTree = "<group>"; };
+		7A8F56FB2430ED8A009F21A9 /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
+		7A8F56FF2430EDF3009F21A9 /* Professor.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Professor.storyboard; sourceTree = "<group>"; };
+		7A8F57012430F1E9009F21A9 /* HomeTVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTVCell.swift; sourceTree = "<group>"; };
+		7A8F57022430F1E9009F21A9 /* HomeTVCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeTVCell.xib; sourceTree = "<group>"; };
 		7AED6059242F6B1800142B9A /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		7AED6060242F6C4900142B9A /* NotificationsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationsVC.swift; sourceTree = "<group>"; };
 		7AED6063242F6C7800142B9A /* BaseVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseVC.swift; sourceTree = "<group>"; };
-		7AED6069242F741200142B9A /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		7AED6069242F741200142B9A /* Student.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Student.storyboard; sourceTree = "<group>"; };
 		7AED606D242F7A1E00142B9A /* NotificationsEmptyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationsEmptyView.swift; sourceTree = "<group>"; };
 		890D0503AE72FD1F038EE4F4 /* Pods_iBeacon_System.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iBeacon_System.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9035D0819FB947E6D56F36FA /* Pods-iBeacon System.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iBeacon System.release.xcconfig"; path = "Target Support Files/Pods-iBeacon System/Pods-iBeacon System.release.xcconfig"; sourceTree = "<group>"; };
@@ -80,6 +90,73 @@
 			path = ASKit;
 			sourceTree = "<group>";
 		};
+		7A8F56F224308A4D009F21A9 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				7A8F56F624308A83009F21A9 /* View */,
+				7A8F56F524308A7E009F21A9 /* VC */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		7A8F56F524308A7E009F21A9 /* VC */ = {
+			isa = PBXGroup;
+			children = (
+				7A8F56F324308A6B009F21A9 /* ProfileTVC.swift */,
+			);
+			path = VC;
+			sourceTree = "<group>";
+		};
+		7A8F56F624308A83009F21A9 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		7A8F56F72430ED15009F21A9 /* Student */ = {
+			isa = PBXGroup;
+			children = (
+				7A8F56F224308A4D009F21A9 /* Profile */,
+				7AED605C242F6BF200142B9A /* Notifications */,
+			);
+			path = Student;
+			sourceTree = "<group>";
+		};
+		7A8F56F82430ED41009F21A9 /* Professor */ = {
+			isa = PBXGroup;
+			children = (
+				7A8F56F92430ED53009F21A9 /* Home */,
+			);
+			path = Professor;
+			sourceTree = "<group>";
+		};
+		7A8F56F92430ED53009F21A9 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				7A8F56FD2430ED9B009F21A9 /* View */,
+				7A8F56FA2430ED5D009F21A9 /* VC */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		7A8F56FA2430ED5D009F21A9 /* VC */ = {
+			isa = PBXGroup;
+			children = (
+				7A8F56FB2430ED8A009F21A9 /* HomeVC.swift */,
+			);
+			path = VC;
+			sourceTree = "<group>";
+		};
+		7A8F56FD2430ED9B009F21A9 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				7A8F57012430F1E9009F21A9 /* HomeTVCell.swift */,
+				7A8F57022430F1E9009F21A9 /* HomeTVCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		7AED6058242F6B0200142B9A /* Utils */ = {
 			isa = PBXGroup;
 			children = (
@@ -92,9 +169,10 @@
 		7AED605B242F6BDE00142B9A /* Features */ = {
 			isa = PBXGroup;
 			children = (
+				7A8F56F82430ED41009F21A9 /* Professor */,
 				7AED6068242F6CBC00142B9A /* Storyboards */,
+				7A8F56F72430ED15009F21A9 /* Student */,
 				7AED6062242F6C4D00142B9A /* Base */,
-				7AED605C242F6BF200142B9A /* Notifications */,
 				E252A07E23FF98DA00E331A2 /* Auth */,
 			);
 			path = Features;
@@ -148,7 +226,8 @@
 			isa = PBXGroup;
 			children = (
 				E2EA53E123FD35F50077C5BE /* Auth.storyboard */,
-				7AED6069242F741200142B9A /* Main.storyboard */,
+				7AED6069242F741200142B9A /* Student.storyboard */,
+				7A8F56FF2430EDF3009F21A9 /* Professor.storyboard */,
 			);
 			path = Storyboards;
 			sourceTree = "<group>";
@@ -266,11 +345,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				E2EA53E823FD35F60077C5BE /* LaunchScreen.storyboard in Resources */,
-				7AED606A242F741200142B9A /* Main.storyboard in Resources */,
+				7AED606A242F741200142B9A /* Student.storyboard in Resources */,
+				7A8F57042430F1E9009F21A9 /* HomeTVCell.xib in Resources */,
 				7A8F56EA2430100E009F21A9 /* NotificationTVCell.xib in Resources */,
 				E252A07B23FD392400E331A2 /* GoogleService-Info.plist in Resources */,
 				E2EA53E523FD35F60077C5BE /* Assets.xcassets in Resources */,
 				E2EA53E323FD35F50077C5BE /* Auth.storyboard in Resources */,
+				7A8F57002430EDF3009F21A9 /* Professor.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -323,9 +404,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7A8F57032430F1E9009F21A9 /* HomeTVCell.swift in Sources */,
+				7A8F56F424308A6B009F21A9 /* ProfileTVC.swift in Sources */,
 				E2EA53E023FD35F50077C5BE /* ViewController.swift in Sources */,
 				7AED6064242F6C7800142B9A /* BaseVC.swift in Sources */,
 				7AED6061242F6C4900142B9A /* NotificationsVC.swift in Sources */,
+				7A8F56FC2430ED8A009F21A9 /* HomeVC.swift in Sources */,
 				7AED606E242F7A1E00142B9A /* NotificationsEmptyView.swift in Sources */,
 				7A8F56EF24308439009F21A9 /* ASLabel.swift in Sources */,
 				7A8F56E92430100E009F21A9 /* NotificationTVCell.swift in Sources */,

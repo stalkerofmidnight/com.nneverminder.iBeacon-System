@@ -16,6 +16,7 @@ final class NotificationsEmptyView: UIView {
         label.textColor = .black
         label.text = "Welcome, Anastasiya!\nYou don’t have any notifications yet"
         label.translatesAutoresizingMaskIntoConstraints = false
+        label.numberOfLines = 0
         return label
     }()
     
