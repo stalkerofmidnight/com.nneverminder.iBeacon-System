@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="A5P-8j-STB">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Profile-->
+        <scene sceneID="d1t-KM-Oyn">
+            <objects>
+                <viewController id="rOK-II-ssL" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Pqd-Wv-8UG">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="c5W-OL-VaQ"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Profile" image="ic_tab_profile" id="HLA-eZ-yX2"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vVL-H6-GJO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="271" y="211"/>
+        </scene>
+        <!--Notifications-->
+        <scene sceneID="ML0-3P-tja">
+            <objects>
+                <viewController id="wXz-sG-8iI" customClass="NotificationsVC" customModule="iBeacon_System" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="AQh-Jl-y9N">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="eNW-z5-o2E">
+                                <rect key="frame" x="0.0" y="44" width="414" height="769"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="eNW-z5-o2E" firstAttribute="top" secondItem="vjz-jR-NXd" secondAttribute="top" id="7eT-bH-Lsz"/>
+                            <constraint firstItem="vjz-jR-NXd" firstAttribute="bottom" secondItem="eNW-z5-o2E" secondAttribute="bottom" id="FXx-7r-iLC"/>
+                            <constraint firstItem="vjz-jR-NXd" firstAttribute="trailing" secondItem="eNW-z5-o2E" secondAttribute="trailing" id="T1Q-31-ghL"/>
+                            <constraint firstItem="eNW-z5-o2E" firstAttribute="leading" secondItem="vjz-jR-NXd" secondAttribute="leading" id="Uc5-LU-67c"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="vjz-jR-NXd"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Notifications" image="ic_tab_notifications" id="NeV-iD-5il"/>
+                    <connections>
+                        <outlet property="tableView" destination="eNW-z5-o2E" id="UFJ-I1-mbn"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Twf-mc-FAT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="271" y="-437"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="2EF-EF-682">
+            <objects>
+                <tabBarController id="A5P-8j-STB" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="YhS-n0-7nP">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="tintColor" name="Violet"/>
+                        <color key="barTintColor" name="White"/>
+                        <color key="selectedImageTintColor" name="Violet"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="wXz-sG-8iI" kind="relationship" relationship="viewControllers" id="41W-BC-GUZ"/>
+                        <segue destination="rOK-II-ssL" kind="relationship" relationship="viewControllers" id="WcD-8q-h75"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Uis-Lu-cy6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-648" y="-113"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="ic_tab_notifications" width="19" height="19"/>
+        <image name="ic_tab_profile" width="22" height="22"/>
+        <namedColor name="Violet">
+            <color red="0.34509803921568627" green="0.33725490196078434" blue="0.74117647058823533" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="White">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

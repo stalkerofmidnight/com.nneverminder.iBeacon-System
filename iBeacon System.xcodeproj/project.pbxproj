@@ -7,18 +7,38 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7A8F56E92430100E009F21A9 /* NotificationTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A8F56E72430100E009F21A9 /* NotificationTVCell.swift */; };
+		7A8F56EA2430100E009F21A9 /* NotificationTVCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7A8F56E82430100E009F21A9 /* NotificationTVCell.xib */; };
+		7A8F56EC24307CE8009F21A9 /* Extenstions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A8F56EB24307CE8009F21A9 /* Extenstions.swift */; };
+		7A8F56EF24308439009F21A9 /* ASLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A8F56EE24308439009F21A9 /* ASLabel.swift */; };
+		7A8F56F1243084C8009F21A9 /* NotificationsVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A8F56F0243084C8009F21A9 /* NotificationsVM.swift */; };
+		7AED605A242F6B1900142B9A /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AED6059242F6B1800142B9A /* Colors.swift */; };
+		7AED6061242F6C4900142B9A /* NotificationsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AED6060242F6C4900142B9A /* NotificationsVC.swift */; };
+		7AED6064242F6C7800142B9A /* BaseVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AED6063242F6C7800142B9A /* BaseVC.swift */; };
+		7AED606A242F741200142B9A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7AED6069242F741200142B9A /* Main.storyboard */; };
+		7AED606E242F7A1E00142B9A /* NotificationsEmptyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AED606D242F7A1E00142B9A /* NotificationsEmptyView.swift */; };
 		C87C354261CF4C46FAE0B645 /* Pods_iBeacon_System.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 890D0503AE72FD1F038EE4F4 /* Pods_iBeacon_System.framework */; };
 		E252A07B23FD392400E331A2 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E252A07A23FD392300E331A2 /* GoogleService-Info.plist */; };
 		E252A07D23FF98D700E331A2 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E252A07C23FF98D700E331A2 /* LoginVC.swift */; };
 		E2EA53DC23FD35F50077C5BE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2EA53DB23FD35F50077C5BE /* AppDelegate.swift */; };
 		E2EA53E023FD35F50077C5BE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2EA53DF23FD35F50077C5BE /* ViewController.swift */; };
-		E2EA53E323FD35F50077C5BE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E2EA53E123FD35F50077C5BE /* Main.storyboard */; };
+		E2EA53E323FD35F50077C5BE /* Auth.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E2EA53E123FD35F50077C5BE /* Auth.storyboard */; };
 		E2EA53E523FD35F60077C5BE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E2EA53E423FD35F60077C5BE /* Assets.xcassets */; };
 		E2EA53E823FD35F60077C5BE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E2EA53E623FD35F60077C5BE /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		3DDA90F6E150C636DFC02ED9 /* Pods-iBeacon System.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iBeacon System.debug.xcconfig"; path = "Target Support Files/Pods-iBeacon System/Pods-iBeacon System.debug.xcconfig"; sourceTree = "<group>"; };
+		7A8F56E72430100E009F21A9 /* NotificationTVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationTVCell.swift; sourceTree = "<group>"; };
+		7A8F56E82430100E009F21A9 /* NotificationTVCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NotificationTVCell.xib; sourceTree = "<group>"; };
+		7A8F56EB24307CE8009F21A9 /* Extenstions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extenstions.swift; sourceTree = "<group>"; };
+		7A8F56EE24308439009F21A9 /* ASLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASLabel.swift; sourceTree = "<group>"; };
+		7A8F56F0243084C8009F21A9 /* NotificationsVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationsVM.swift; sourceTree = "<group>"; };
+		7AED6059242F6B1800142B9A /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		7AED6060242F6C4900142B9A /* NotificationsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationsVC.swift; sourceTree = "<group>"; };
+		7AED6063242F6C7800142B9A /* BaseVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseVC.swift; sourceTree = "<group>"; };
+		7AED6069242F741200142B9A /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		7AED606D242F7A1E00142B9A /* NotificationsEmptyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationsEmptyView.swift; sourceTree = "<group>"; };
 		890D0503AE72FD1F038EE4F4 /* Pods_iBeacon_System.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iBeacon_System.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9035D0819FB947E6D56F36FA /* Pods-iBeacon System.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iBeacon System.release.xcconfig"; path = "Target Support Files/Pods-iBeacon System/Pods-iBeacon System.release.xcconfig"; sourceTree = "<group>"; };
 		E252A07A23FD392300E331A2 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
@@ -26,7 +46,7 @@
 		E2EA53D823FD35F50077C5BE /* iBeacon System.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iBeacon System.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2EA53DB23FD35F50077C5BE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E2EA53DF23FD35F50077C5BE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		E2EA53E223FD35F50077C5BE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E2EA53E223FD35F50077C5BE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Auth.storyboard; sourceTree = "<group>"; };
 		E2EA53E423FD35F60077C5BE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E2EA53E723FD35F60077C5BE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E2EA53E923FD35F60077C5BE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -50,6 +70,87 @@
 				890D0503AE72FD1F038EE4F4 /* Pods_iBeacon_System.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7A8F56ED2430841E009F21A9 /* ASKit */ = {
+			isa = PBXGroup;
+			children = (
+				7A8F56EE24308439009F21A9 /* ASLabel.swift */,
+			);
+			path = ASKit;
+			sourceTree = "<group>";
+		};
+		7AED6058242F6B0200142B9A /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				7AED6059242F6B1800142B9A /* Colors.swift */,
+				7A8F56EB24307CE8009F21A9 /* Extenstions.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		7AED605B242F6BDE00142B9A /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				7AED6068242F6CBC00142B9A /* Storyboards */,
+				7AED6062242F6C4D00142B9A /* Base */,
+				7AED605C242F6BF200142B9A /* Notifications */,
+				E252A07E23FF98DA00E331A2 /* Auth */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		7AED605C242F6BF200142B9A /* Notifications */ = {
+			isa = PBXGroup;
+			children = (
+				7AED605F242F6C3C00142B9A /* View */,
+				7AED605E242F6C3600142B9A /* VM */,
+				7AED605D242F6C2F00142B9A /* VC */,
+			);
+			path = Notifications;
+			sourceTree = "<group>";
+		};
+		7AED605D242F6C2F00142B9A /* VC */ = {
+			isa = PBXGroup;
+			children = (
+				7AED6060242F6C4900142B9A /* NotificationsVC.swift */,
+			);
+			path = VC;
+			sourceTree = "<group>";
+		};
+		7AED605E242F6C3600142B9A /* VM */ = {
+			isa = PBXGroup;
+			children = (
+				7A8F56F0243084C8009F21A9 /* NotificationsVM.swift */,
+			);
+			path = VM;
+			sourceTree = "<group>";
+		};
+		7AED605F242F6C3C00142B9A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				7AED606D242F7A1E00142B9A /* NotificationsEmptyView.swift */,
+				7A8F56E72430100E009F21A9 /* NotificationTVCell.swift */,
+				7A8F56E82430100E009F21A9 /* NotificationTVCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		7AED6062242F6C4D00142B9A /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				7AED6063242F6C7800142B9A /* BaseVC.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		7AED6068242F6CBC00142B9A /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				E2EA53E123FD35F50077C5BE /* Auth.storyboard */,
+				7AED6069242F741200142B9A /* Main.storyboard */,
+			);
+			path = Storyboards;
 			sourceTree = "<group>";
 		};
 		E252A07E23FF98DA00E331A2 /* Auth */ = {
@@ -81,10 +182,11 @@
 		E2EA53DA23FD35F50077C5BE /* iBeacon System */ = {
 			isa = PBXGroup;
 			children = (
-				E252A07E23FF98DA00E331A2 /* Auth */,
+				7A8F56ED2430841E009F21A9 /* ASKit */,
+				7AED605B242F6BDE00142B9A /* Features */,
+				7AED6058242F6B0200142B9A /* Utils */,
 				E2EA53DB23FD35F50077C5BE /* AppDelegate.swift */,
 				E2EA53DF23FD35F50077C5BE /* ViewController.swift */,
-				E2EA53E123FD35F50077C5BE /* Main.storyboard */,
 				E2EA53E423FD35F60077C5BE /* Assets.xcassets */,
 				E2EA53E623FD35F60077C5BE /* LaunchScreen.storyboard */,
 				E2EA53E923FD35F60077C5BE /* Info.plist */,
@@ -164,9 +266,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				E2EA53E823FD35F60077C5BE /* LaunchScreen.storyboard in Resources */,
+				7AED606A242F741200142B9A /* Main.storyboard in Resources */,
+				7A8F56EA2430100E009F21A9 /* NotificationTVCell.xib in Resources */,
 				E252A07B23FD392400E331A2 /* GoogleService-Info.plist in Resources */,
 				E2EA53E523FD35F60077C5BE /* Assets.xcassets in Resources */,
-				E2EA53E323FD35F50077C5BE /* Main.storyboard in Resources */,
+				E2EA53E323FD35F50077C5BE /* Auth.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -220,7 +324,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				E2EA53E023FD35F50077C5BE /* ViewController.swift in Sources */,
+				7AED6064242F6C7800142B9A /* BaseVC.swift in Sources */,
+				7AED6061242F6C4900142B9A /* NotificationsVC.swift in Sources */,
+				7AED606E242F7A1E00142B9A /* NotificationsEmptyView.swift in Sources */,
+				7A8F56EF24308439009F21A9 /* ASLabel.swift in Sources */,
+				7A8F56E92430100E009F21A9 /* NotificationTVCell.swift in Sources */,
+				7A8F56F1243084C8009F21A9 /* NotificationsVM.swift in Sources */,
+				7AED605A242F6B1900142B9A /* Colors.swift in Sources */,
 				E2EA53DC23FD35F50077C5BE /* AppDelegate.swift in Sources */,
+				7A8F56EC24307CE8009F21A9 /* Extenstions.swift in Sources */,
 				E252A07D23FF98D700E331A2 /* LoginVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -228,12 +340,12 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		E2EA53E123FD35F50077C5BE /* Main.storyboard */ = {
+		E2EA53E123FD35F50077C5BE /* Auth.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				E2EA53E223FD35F50077C5BE /* Base */,
 			);
-			name = Main.storyboard;
+			name = Auth.storyboard;
 			sourceTree = "<group>";
 		};
 		E2EA53E623FD35F60077C5BE /* LaunchScreen.storyboard */ = {
