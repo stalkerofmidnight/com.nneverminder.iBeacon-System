@@ -32,7 +32,7 @@ class NotificationsVM {
                 self.notifications = Mapper<Notification>().mapArray(JSONArray: json)
                 self.delegate?.notificationsVM(didLoad: self.notifications)
             }
-            delegate?.lognotificationsVMinVM(didChange: .idle)
+            self.delegate?.lognotificationsVMinVM(didChange: .idle)
         }
     }
 }

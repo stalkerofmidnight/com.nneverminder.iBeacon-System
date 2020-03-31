@@ -54,6 +54,8 @@ extension LoginVC: LoginVMDelegate {
                 MBProgressHUD.hide(for: self.view, animated: true)
             case .overlay:
                 MBProgressHUD.showAdded(to: self.view, animated: true)
+            default:
+                break
         }
     }
 }

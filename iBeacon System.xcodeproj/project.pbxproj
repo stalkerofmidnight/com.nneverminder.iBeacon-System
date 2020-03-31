@@ -15,6 +15,8 @@
 		7A53F3A82433788B00EAF736 /* SessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A53F3A72433788B00EAF736 /* SessionManager.swift */; };
 		7A53F3AA24337DF900EAF736 /* Notification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A53F3A924337DF900EAF736 /* Notification.swift */; };
 		7A53F3AD2433834400EAF736 /* ProfileVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A53F3AC2433834400EAF736 /* ProfileVM.swift */; };
+		7A53F3B02433967300EAF736 /* HomeVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A53F3AF2433967300EAF736 /* HomeVM.swift */; };
+		7A53F3B5243398B900EAF736 /* Student.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A53F3B22433980500EAF736 /* Student.swift */; };
 		7A8F56E92430100E009F21A9 /* NotificationTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A8F56E72430100E009F21A9 /* NotificationTVCell.swift */; };
 		7A8F56EA2430100E009F21A9 /* NotificationTVCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7A8F56E82430100E009F21A9 /* NotificationTVCell.xib */; };
 		7A8F56EC24307CE8009F21A9 /* Extenstions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A8F56EB24307CE8009F21A9 /* Extenstions.swift */; };
@@ -50,6 +52,8 @@
 		7A53F3A72433788B00EAF736 /* SessionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionManager.swift; sourceTree = "<group>"; };
 		7A53F3A924337DF900EAF736 /* Notification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Notification.swift; sourceTree = "<group>"; };
 		7A53F3AC2433834400EAF736 /* ProfileVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileVM.swift; sourceTree = "<group>"; };
+		7A53F3AF2433967300EAF736 /* HomeVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVM.swift; sourceTree = "<group>"; };
+		7A53F3B22433980500EAF736 /* Student.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Student.swift; sourceTree = "<group>"; };
 		7A8F56E72430100E009F21A9 /* NotificationTVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationTVCell.swift; sourceTree = "<group>"; };
 		7A8F56E82430100E009F21A9 /* NotificationTVCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NotificationTVCell.xib; sourceTree = "<group>"; };
 		7A8F56EB24307CE8009F21A9 /* Extenstions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extenstions.swift; sourceTree = "<group>"; };
@@ -142,6 +146,22 @@
 			path = VM;
 			sourceTree = "<group>";
 		};
+		7A53F3AE2433966700EAF736 /* VM */ = {
+			isa = PBXGroup;
+			children = (
+				7A53F3AF2433967300EAF736 /* HomeVM.swift */,
+			);
+			path = VM;
+			sourceTree = "<group>";
+		};
+		7A53F3B42433980900EAF736 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				7A53F3B22433980500EAF736 /* Student.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		7A8F56ED2430841E009F21A9 /* ASKit */ = {
 			isa = PBXGroup;
 			children = (
@@ -195,6 +215,8 @@
 		7A8F56F92430ED53009F21A9 /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				7A53F3B42433980900EAF736 /* Model */,
+				7A53F3AE2433966700EAF736 /* VM */,
 				7A8F56FD2430ED9B009F21A9 /* View */,
 				7A8F56FA2430ED5D009F21A9 /* VC */,
 			);
@@ -475,6 +497,7 @@
 				7A53F39E2433702100EAF736 /* LoginVM.swift in Sources */,
 				7A53F3A12433707300EAF736 /* Beacon.swift in Sources */,
 				7A53F3AD2433834400EAF736 /* ProfileVM.swift in Sources */,
+				7A53F3B5243398B900EAF736 /* Student.swift in Sources */,
 				7AED6061242F6C4900142B9A /* NotificationsVC.swift in Sources */,
 				7A8F56FC2430ED8A009F21A9 /* HomeVC.swift in Sources */,
 				7AED606E242F7A1E00142B9A /* NotificationsEmptyView.swift in Sources */,
@@ -485,6 +508,7 @@
 				7AED605A242F6B1900142B9A /* Colors.swift in Sources */,
 				7A53F3A32433715100EAF736 /* Room.swift in Sources */,
 				E2EA53DC23FD35F50077C5BE /* AppDelegate.swift in Sources */,
+				7A53F3B02433967300EAF736 /* HomeVM.swift in Sources */,
 				7A53F3A5243372F200EAF736 /* LoadinState.swift in Sources */,
 				7A53F3AA24337DF900EAF736 /* Notification.swift in Sources */,
 				7A8F56EC24307CE8009F21A9 /* Extenstions.swift in Sources */,

@@ -8,6 +8,7 @@
 
 import UIKit
 import FSCalendar
+import MBProgressHUD
 
 class HomeVC: BaseVC {
     
@@ -47,9 +48,13 @@ class HomeVC: BaseVC {
         }
     }
     
+    var viewModel: HomeVM!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        viewModel = HomeVM()
+        viewModel.delegate = self
+        calendarView.select(Date())
     }
 }
 
@@ -67,7 +72,7 @@ extension HomeVC: FSCalendarDataSource {
 // MARK:- FSCalendarDelegate
 extension HomeVC: FSCalendarDelegate {
     func calendar(_ calendar: FSCalendar, didSelect date: Date, at monthPosition: FSCalendarMonthPosition) {
-        
+        viewModel.load(for: date)
     }
     
     func calendar(_ calendar: FSCalendar, boundingRectWillChange bounds: CGRect, animated: Bool) {
@@ -90,4 +95,25 @@ extension HomeVC: UITableViewDataSource {
 
 extension HomeVC: UITableViewDelegate {
     
+}
+
+extension HomeVC: HomeVMDelegate {
+    func homeVM(didLoad students: [Student]) {
+        tableView.reloadData()
+    }
+    
+    func homeVM(didRecieveError message: String) {
+        showAlert(with: message)
+    }
+    
+    func homeVM(didChange state: LoadingState) {
+        switch state {
+            case .idle:
+                MBProgressHUD.hide(for: self.tableView, animated: true)
+            case .overlay:
+                MBProgressHUD.showAdded(to: self.tableView, animated: true)
+            default:
+                break
+        }
+    }
 }
