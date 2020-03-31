@@ -23,7 +23,7 @@ class NotificationsVC: BaseVC {
     }
     
     lazy var emptyView: NotificationsEmptyView = {
-        let view = NotificationsEmptyView()
+        let view = NotificationsEmptyView(name: SessionManager.shared.getUser()!.name)
         return view
     }()
     
@@ -33,11 +33,10 @@ class NotificationsVC: BaseVC {
         return conrol
     }()
     
-    var viewModel: NotificationsVM!
+    var viewModel: NotificationsVM = NotificationsVM()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        viewModel = NotificationsVM()
         viewModel.delegate = self
         viewModel.getNotifications(state: .overlay)
     }

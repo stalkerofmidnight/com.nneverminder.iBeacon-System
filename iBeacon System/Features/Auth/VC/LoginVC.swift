@@ -39,8 +39,18 @@ class LoginVC: UIViewController {
 extension LoginVC: LoginVMDelegate {
     
     func loginVM(didLoadUser user: User) {
-        UIView.transition(with: UIApplication.shared.windows.first!, duration: 0.3, options: .transitionFlipFromLeft, animations: {
-            UIApplication.shared.windows.first!.rootViewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "ViewController")
+        guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else { return }
+        
+        guard let window = appDelegate.window else { return }
+        
+        if user.isProfessor {
+            window.rootViewController = UIStoryboard(name: "Professor", bundle: nil).instantiateInitialViewController()
+        } else {
+            window.rootViewController = UIStoryboard(name: "Student", bundle: nil).instantiateInitialViewController()
+        }
+        
+        UIView.transition(with: window, duration: 0.2, options: .transitionFlipFromLeft, animations: {
+            window.makeKeyAndVisible()
         }, completion: nil)
     }
     

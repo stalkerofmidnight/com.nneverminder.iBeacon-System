@@ -12,10 +12,11 @@ import ObjectMapper
 struct User: Mappable {
     
     var id: String = ""
-    var isAdmin: Bool = false
-    var beacon: [Beacon] = []
+    var isProfessor: Bool = false
+    var beacons: [Beacon] = []
     var rooms: [Room] = []
     var email: String = ""
+    var name: String = ""
     
     init?(map: Map) {
         
@@ -23,9 +24,10 @@ struct User: Mappable {
     
     mutating func mapping(map: Map) {
         id <- map["id"]
-        isAdmin <- map["isAdmin"]
-        beacon <- map["beacon"]
+        isProfessor <- map["isProfessor"]
+        beacons <- map["beacons"]
         rooms <- map["rooms"]
         email <- map["email"]
+        name <- map["name"]
     }
 }

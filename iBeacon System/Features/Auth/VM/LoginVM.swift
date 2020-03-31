@@ -28,8 +28,10 @@ class LoginVM {
             if let error = error {
                 self.delegate?.loginVM(didRecieveError: error.localizedDescription)
             } else if let json = result?.data as? [String: Any], let user = Mapper<User>().map(JSON: json) {
+                SessionManager.shared.set(user)
                 self.delegate?.loginVM(didLoadUser: user)
             }
+            self.delegate?.loginVM(didChange: .idle)
         }
     }
     
@@ -49,8 +51,8 @@ class LoginVM {
         
         Auth.auth().signIn(withEmail: email, password: password) {  [weak self] authResult, error in
             guard self != nil else { return }
-            self?.delegate?.loginVM(didChange: .idle)
             if let error = error {
+                self?.delegate?.loginVM(didChange: .idle)
                 self?.delegate?.loginVM(didRecieveError: error.localizedDescription)
             } else {
                 self?.getUser(uuid: Auth.auth().currentUser!.uid)

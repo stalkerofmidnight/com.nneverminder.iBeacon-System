@@ -14,7 +14,7 @@ final class NotificationsEmptyView: UIView {
         let label = UILabel()
         label.font = .systemFont(ofSize: 15, weight: .medium)
         label.textColor = .black
-        label.text = "Welcome, Anastasiya!\nYou don’t have any notifications yet"
+        label.textAlignment = .center
         label.translatesAutoresizingMaskIntoConstraints = false
         label.numberOfLines = 0
         return label
@@ -30,7 +30,12 @@ final class NotificationsEmptyView: UIView {
         initialSetup()
     }
     
-    func initialSetup() {
+    convenience init(name: String) {
+        self.init(frame: .zero)
+        titleLabel.text = "Welcome, \(name)\nYou don’t have any notifications yet"
+    }
+    
+    private func initialSetup() {
         addSubview(titleLabel)
         
         NSLayoutConstraint.activate([
