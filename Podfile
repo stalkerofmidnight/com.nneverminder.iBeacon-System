@@ -7,6 +7,10 @@ target 'iBeacon System' do
 
   # Pods for iBeacon System
    pod 'Firebase/Auth'
+   pod 'Firebase/Functions'
+   
    pod 'MBProgressHUD'
    pod 'FSCalendar'
+   pod 'ObjectMapper'
+   
 end

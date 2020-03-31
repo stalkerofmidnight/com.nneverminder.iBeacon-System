@@ -7,14 +7,14 @@
 //
 
 import UIKit
-
+import FirebaseFunctions
 class ProfileTVC: UITableViewController {
     
     enum Rows: Int {
         case info
         case logout
     }
-
+    
     @IBOutlet weak var profileImageView: UIImageView! {
         didSet {
             profileImageView.clipsToBounds = true
@@ -25,15 +25,20 @@ class ProfileTVC: UITableViewController {
     
     @IBOutlet weak var profileEmail: UILabel!
     
+    var viewModel: ProfileVM!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        viewModel = ProfileVM()
+        viewModel.delegate = self
+        profileEmail.text = SessionManager.shared.getUser()!.email
         tableView.tableFooterView = UIView(frame: .zero)
     }
     
     private func showLogoutAlert() {
         let alert = UIAlertController(title: "Are you sure?", message: "Exit?", preferredStyle: .alert)
         alert.addAction(UIAlertAction(title: "Exit", style: .destructive, handler: { action in
-            //TODO: LogOut
+            self.viewModel.logout()
         }))
         alert.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: nil))
         present(alert, animated: true, completion: nil)
@@ -48,7 +53,21 @@ extension ProfileTVC {
             case .info:
                 break
             case .logout:
-                break
+                showLogoutAlert()
         }
+    }
+}
+
+
+extension ProfileTVC: ProfileVMDelegate {
+    
+    func profileVMDidLogOut() {
+        UIView.transition(with: UIApplication.shared.windows.first!, duration: 0.3, options: .transitionFlipFromLeft, animations: {
+            UIApplication.shared.windows.first?.rootViewController = UIStoryboard(name: "Auth", bundle: nil).instantiateInitialViewController()
+        }, completion: nil)
+    }
+    
+    func profileVM(didRecieveError message: String) {
+        showAlert(with: message)
     }
 }

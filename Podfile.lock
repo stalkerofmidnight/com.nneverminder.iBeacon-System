@@ -4,6 +4,9 @@ PODS:
     - FirebaseAuth (~> 6.4.3)
   - Firebase/CoreOnly (6.17.0):
     - FirebaseCore (= 6.6.2)
+  - Firebase/Functions (6.17.0):
+    - Firebase/CoreOnly
+    - FirebaseFunctions (~> 2.5.1)
   - FirebaseAuth (6.4.3):
     - FirebaseAuthInterop (~> 1.0)
     - FirebaseCore (~> 6.6)
@@ -23,6 +26,10 @@ PODS:
     - GoogleUtilities/Logger (~> 6.5)
     - nanopb (~> 0.3.901)
   - FirebaseCoreDiagnosticsInterop (1.2.0)
+  - FirebaseFunctions (2.5.1):
+    - FirebaseAuthInterop (~> 1.0)
+    - FirebaseCore (~> 6.0)
+    - GTMSessionFetcher/Core (~> 1.1)
   - FSCalendar (2.8.1)
   - GoogleDataTransport (4.0.0)
   - GoogleDataTransportCCTSupport (1.4.0):
@@ -49,11 +56,14 @@ PODS:
     - nanopb/encode (= 0.3.9011)
   - nanopb/decode (0.3.9011)
   - nanopb/encode (0.3.9011)
+  - ObjectMapper (3.5.1)
 
 DEPENDENCIES:
   - Firebase/Auth
+  - Firebase/Functions
   - FSCalendar
   - MBProgressHUD
+  - ObjectMapper
 
 SPEC REPOS:
   trunk:
@@ -63,6 +73,7 @@ SPEC REPOS:
     - FirebaseCore
     - FirebaseCoreDiagnostics
     - FirebaseCoreDiagnosticsInterop
+    - FirebaseFunctions
     - FSCalendar
     - GoogleDataTransport
     - GoogleDataTransportCCTSupport
@@ -70,6 +81,7 @@ SPEC REPOS:
     - GTMSessionFetcher
     - MBProgressHUD
     - nanopb
+    - ObjectMapper
 
 SPEC CHECKSUMS:
   Firebase: 2672e5636b42f977177716317e68346ae5e9de25
@@ -78,6 +90,7 @@ SPEC CHECKSUMS:
   FirebaseCore: a1dd9dd6355a8356dd30a8f076839e242285a81c
   FirebaseCoreDiagnostics: 5e78803ab276bc5b50340e3c539c06c3de35c649
   FirebaseCoreDiagnosticsInterop: 296e2c5f5314500a850ad0b83e9e7c10b011a850
+  FirebaseFunctions: 5af7c35d1c5e41608fecbb667eb6c4e672e318d0
   FSCalendar: 5245140456fcbcac5824c203b98bd8068bdfee1a
   GoogleDataTransport: 47fe3b8e1673e5187dfd615656a3c5034f150d69
   GoogleDataTransportCCTSupport: 36f69887fd212db6d7ef4dd45ba44523717a434e
@@ -85,7 +98,8 @@ SPEC CHECKSUMS:
   GTMSessionFetcher: cea130bbfe5a7edc8d06d3f0d17288c32ffe9925
   MBProgressHUD: 3ee5efcc380f6a79a7cc9b363dd669c5e1ae7406
   nanopb: 18003b5e52dab79db540fe93fe9579f399bd1ccd
+  ObjectMapper: 70187b8941977c62ccfb423caf6b50be405cabf0
 
-PODFILE CHECKSUM: accebcf8b3ca8a22338c648c763b7c882574ab44
+PODFILE CHECKSUM: b52912a70274b507e3d7374032974ed772d90023
 
 COCOAPODS: 1.8.4

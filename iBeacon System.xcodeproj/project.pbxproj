@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7A53F3992433085B00EAF736 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A53F3982433085B00EAF736 /* User.swift */; };
+		7A53F39E2433702100EAF736 /* LoginVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A53F39D2433702100EAF736 /* LoginVM.swift */; };
+		7A53F3A12433707300EAF736 /* Beacon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A53F3A02433707300EAF736 /* Beacon.swift */; };
+		7A53F3A32433715100EAF736 /* Room.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A53F3A22433715100EAF736 /* Room.swift */; };
+		7A53F3A5243372F200EAF736 /* LoadinState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A53F3A4243372F200EAF736 /* LoadinState.swift */; };
+		7A53F3A82433788B00EAF736 /* SessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A53F3A72433788B00EAF736 /* SessionManager.swift */; };
+		7A53F3AA24337DF900EAF736 /* Notification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A53F3A924337DF900EAF736 /* Notification.swift */; };
+		7A53F3AD2433834400EAF736 /* ProfileVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A53F3AC2433834400EAF736 /* ProfileVM.swift */; };
 		7A8F56E92430100E009F21A9 /* NotificationTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A8F56E72430100E009F21A9 /* NotificationTVCell.swift */; };
 		7A8F56EA2430100E009F21A9 /* NotificationTVCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7A8F56E82430100E009F21A9 /* NotificationTVCell.xib */; };
 		7A8F56EC24307CE8009F21A9 /* Extenstions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A8F56EB24307CE8009F21A9 /* Extenstions.swift */; };
@@ -34,6 +42,14 @@
 
 /* Begin PBXFileReference section */
 		3DDA90F6E150C636DFC02ED9 /* Pods-iBeacon System.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iBeacon System.debug.xcconfig"; path = "Target Support Files/Pods-iBeacon System/Pods-iBeacon System.debug.xcconfig"; sourceTree = "<group>"; };
+		7A53F3982433085B00EAF736 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		7A53F39D2433702100EAF736 /* LoginVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVM.swift; sourceTree = "<group>"; };
+		7A53F3A02433707300EAF736 /* Beacon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Beacon.swift; sourceTree = "<group>"; };
+		7A53F3A22433715100EAF736 /* Room.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Room.swift; sourceTree = "<group>"; };
+		7A53F3A4243372F200EAF736 /* LoadinState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadinState.swift; sourceTree = "<group>"; };
+		7A53F3A72433788B00EAF736 /* SessionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionManager.swift; sourceTree = "<group>"; };
+		7A53F3A924337DF900EAF736 /* Notification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Notification.swift; sourceTree = "<group>"; };
+		7A53F3AC2433834400EAF736 /* ProfileVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileVM.swift; sourceTree = "<group>"; };
 		7A8F56E72430100E009F21A9 /* NotificationTVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationTVCell.swift; sourceTree = "<group>"; };
 		7A8F56E82430100E009F21A9 /* NotificationTVCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NotificationTVCell.xib; sourceTree = "<group>"; };
 		7A8F56EB24307CE8009F21A9 /* Extenstions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extenstions.swift; sourceTree = "<group>"; };
@@ -82,6 +98,50 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		7A53F3972433085100EAF736 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				7A53F3982433085B00EAF736 /* User.swift */,
+				7A53F3A02433707300EAF736 /* Beacon.swift */,
+				7A53F3A22433715100EAF736 /* Room.swift */,
+				7A53F3A4243372F200EAF736 /* LoadinState.swift */,
+				7A53F3A924337DF900EAF736 /* Notification.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		7A53F39B243352EB00EAF736 /* VM */ = {
+			isa = PBXGroup;
+			children = (
+				7A53F39D2433702100EAF736 /* LoginVM.swift */,
+			);
+			path = VM;
+			sourceTree = "<group>";
+		};
+		7A53F39C243352F100EAF736 /* VC */ = {
+			isa = PBXGroup;
+			children = (
+				E252A07C23FF98D700E331A2 /* LoginVC.swift */,
+			);
+			path = VC;
+			sourceTree = "<group>";
+		};
+		7A53F3A62433787C00EAF736 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				7A53F3A72433788B00EAF736 /* SessionManager.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		7A53F3AB2433833700EAF736 /* VM */ = {
+			isa = PBXGroup;
+			children = (
+				7A53F3AC2433834400EAF736 /* ProfileVM.swift */,
+			);
+			path = VM;
+			sourceTree = "<group>";
+		};
 		7A8F56ED2430841E009F21A9 /* ASKit */ = {
 			isa = PBXGroup;
 			children = (
@@ -93,6 +153,7 @@
 		7A8F56F224308A4D009F21A9 /* Profile */ = {
 			isa = PBXGroup;
 			children = (
+				7A53F3AB2433833700EAF736 /* VM */,
 				7A8F56F624308A83009F21A9 /* View */,
 				7A8F56F524308A7E009F21A9 /* VC */,
 			);
@@ -169,8 +230,8 @@
 		7AED605B242F6BDE00142B9A /* Features */ = {
 			isa = PBXGroup;
 			children = (
-				7A8F56F82430ED41009F21A9 /* Professor */,
 				7AED6068242F6CBC00142B9A /* Storyboards */,
+				7A8F56F82430ED41009F21A9 /* Professor */,
 				7A8F56F72430ED15009F21A9 /* Student */,
 				7AED6062242F6C4D00142B9A /* Base */,
 				E252A07E23FF98DA00E331A2 /* Auth */,
@@ -235,7 +296,8 @@
 		E252A07E23FF98DA00E331A2 /* Auth */ = {
 			isa = PBXGroup;
 			children = (
-				E252A07C23FF98D700E331A2 /* LoginVC.swift */,
+				7A53F39C243352F100EAF736 /* VC */,
+				7A53F39B243352EB00EAF736 /* VM */,
 			);
 			path = Auth;
 			sourceTree = "<group>";
@@ -261,6 +323,8 @@
 		E2EA53DA23FD35F50077C5BE /* iBeacon System */ = {
 			isa = PBXGroup;
 			children = (
+				7A53F3A62433787C00EAF736 /* Service */,
+				7A53F3972433085100EAF736 /* Model */,
 				7A8F56ED2430841E009F21A9 /* ASKit */,
 				7AED605B242F6BDE00142B9A /* Features */,
 				7AED6058242F6B0200142B9A /* Utils */,
@@ -408,15 +472,23 @@
 				7A8F56F424308A6B009F21A9 /* ProfileTVC.swift in Sources */,
 				E2EA53E023FD35F50077C5BE /* ViewController.swift in Sources */,
 				7AED6064242F6C7800142B9A /* BaseVC.swift in Sources */,
+				7A53F39E2433702100EAF736 /* LoginVM.swift in Sources */,
+				7A53F3A12433707300EAF736 /* Beacon.swift in Sources */,
+				7A53F3AD2433834400EAF736 /* ProfileVM.swift in Sources */,
 				7AED6061242F6C4900142B9A /* NotificationsVC.swift in Sources */,
 				7A8F56FC2430ED8A009F21A9 /* HomeVC.swift in Sources */,
 				7AED606E242F7A1E00142B9A /* NotificationsEmptyView.swift in Sources */,
 				7A8F56EF24308439009F21A9 /* ASLabel.swift in Sources */,
+				7A53F3992433085B00EAF736 /* User.swift in Sources */,
 				7A8F56E92430100E009F21A9 /* NotificationTVCell.swift in Sources */,
 				7A8F56F1243084C8009F21A9 /* NotificationsVM.swift in Sources */,
 				7AED605A242F6B1900142B9A /* Colors.swift in Sources */,
+				7A53F3A32433715100EAF736 /* Room.swift in Sources */,
 				E2EA53DC23FD35F50077C5BE /* AppDelegate.swift in Sources */,
+				7A53F3A5243372F200EAF736 /* LoadinState.swift in Sources */,
+				7A53F3AA24337DF900EAF736 /* Notification.swift in Sources */,
 				7A8F56EC24307CE8009F21A9 /* Extenstions.swift in Sources */,
+				7A53F3A82433788B00EAF736 /* SessionManager.swift in Sources */,
 				E252A07D23FF98D700E331A2 /* LoginVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
