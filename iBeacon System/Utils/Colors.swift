@@ -2,7 +2,7 @@
 //  Colors.swift
 //  iBeacon System
 //
-//  Created by Ellan Esenaliev on 3/28/20.
+//  Created by Anastasiya Ussenko on 3/28/20.
 //  Copyright © 2020 Anastasiya Ussenko. All rights reserved.
 //
 
