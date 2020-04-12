@@ -659,13 +659,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 5MH85HD7X7;
+				DEVELOPMENT_TEAM = P69BU7AB3U;
 				INFOPLIST_FILE = "iBeacon System/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.nneverminder.iBeacon-System";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.gn.iBeacon-System";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -678,13 +678,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 5MH85HD7X7;
+				DEVELOPMENT_TEAM = P69BU7AB3U;
 				INFOPLIST_FILE = "iBeacon System/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.nneverminder.iBeacon-System";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.gb.iBeacon-System";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

@@ -37,6 +37,8 @@ class HomeVC: BaseVC {
         }
     }
     
+    var viewModel = HomeVM()
+    
     @IBOutlet weak var tableView: UITableView! {
         didSet {
             tableView.delegate = self
@@ -48,11 +50,8 @@ class HomeVC: BaseVC {
         }
     }
     
-    var viewModel: HomeVM!
-    
     override func viewDidLoad() {
         super.viewDidLoad()
-        viewModel = HomeVM()
         viewModel.delegate = self
         calendarView.select(Date())
     }
@@ -84,11 +83,14 @@ extension HomeVC: FSCalendarDelegate {
 extension HomeVC: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 3
+        return viewModel.students.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: HomeTVCell.identifier) as! HomeTVCell
+        cell.studentEmailLabel.text = viewModel.students[indexPath.row].email
+        cell.studentNameLabel.text = viewModel.students[indexPath.row].name
+        cell.contentView.alpha = viewModel.students[indexPath.row].isExist ? 1.0 : 0.5
         return cell
     }
 }

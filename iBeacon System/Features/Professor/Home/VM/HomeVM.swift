@@ -30,8 +30,11 @@ class HomeVM {
         
         delegate?.homeVM(didChange: .overlay)
         students = []
+        Functions.functions()
+        var dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "dd.MM.YYYY"
         
-        Functions.functions().httpsCallable("getStudents").call(["timeInterval": date.timeIntervalSince1970]) { [weak self] (result, error) in
+        Functions.functions().httpsCallable("getUsers").call(["date": dateFormatter.string(from: date)]) { [weak self] (result, error) in
             guard let self = self else { return }
             if let error = error {
                 self.delegate?.homeVM(didRecieveError: error.localizedDescription)

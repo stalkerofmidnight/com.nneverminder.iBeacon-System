@@ -19,9 +19,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         FirebaseApp.configure()
         
         window = UIWindow(frame: UIScreen.main.bounds)
-        if Auth.auth().currentUser != nil {
-            let vc = UIStoryboard(name: "Student", bundle: nil).instantiateInitialViewController()
-            self.window?.rootViewController = vc
+        if let user = SessionManager.shared.getUser() {
+            if user.isProfessor {
+                let vc = UIStoryboard(name: "Student", bundle: nil).instantiateInitialViewController()
+                self.window?.rootViewController = vc
+            } else {
+                let vc = UIStoryboard(name: "Professor", bundle: nil).instantiateInitialViewController()
+                self.window?.rootViewController = vc
+            }
         } else {
             let vc = UIStoryboard(name: "Auth", bundle: nil).instantiateInitialViewController()
             self.window?.rootViewController = vc

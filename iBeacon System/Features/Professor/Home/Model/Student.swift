@@ -14,6 +14,7 @@ struct Student: Mappable {
     var id: String = ""
     var name: String = ""
     var email: String = ""
+    var isExist: Bool = false
     
     init?(map: Map) {
         
@@ -23,5 +24,6 @@ struct Student: Mappable {
         id <- map["id"]
         name <- map["name"]
         email <- map["email"]
+        isExist <- map["isExist"]
     }
 }
