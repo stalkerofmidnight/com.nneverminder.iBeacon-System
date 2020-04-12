@@ -28,19 +28,47 @@
                                 </connections>
                             </view>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="zkg-aZ-ru5">
-                                <rect key="frame" x="0.0" y="300" width="414" height="425"/>
+                                <rect key="frame" x="0.0" y="344" width="414" height="381"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                             </tableView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1Qv-oc-Wml">
+                                <rect key="frame" x="0.0" y="300" width="414" height="44"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PRESENT" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FGR-zc-Pxy">
+                                        <rect key="frame" x="20" y="13.5" width="62" height="17"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <color key="textColor" name="Violet"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vOD-gf-mEJ">
+                                        <rect key="frame" x="394" y="22" width="0.0" height="0.0"/>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="14"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstItem="FGR-zc-Pxy" firstAttribute="leading" secondItem="1Qv-oc-Wml" secondAttribute="leading" constant="20" id="0AH-cK-IOq"/>
+                                    <constraint firstItem="FGR-zc-Pxy" firstAttribute="centerY" secondItem="1Qv-oc-Wml" secondAttribute="centerY" id="I8g-Pu-72l"/>
+                                    <constraint firstItem="vOD-gf-mEJ" firstAttribute="centerY" secondItem="1Qv-oc-Wml" secondAttribute="centerY" id="K5D-he-xB2"/>
+                                    <constraint firstAttribute="trailing" secondItem="vOD-gf-mEJ" secondAttribute="trailing" constant="20" id="khF-7w-6Cf"/>
+                                    <constraint firstAttribute="height" constant="44" id="pM2-4M-rZO"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="zkg-aZ-ru5" firstAttribute="leading" secondItem="csQ-9g-T0g" secondAttribute="leading" id="5Cx-x8-x7R"/>
-                            <constraint firstItem="zkg-aZ-ru5" firstAttribute="top" secondItem="nPS-Ak-QxF" secondAttribute="bottom" id="Eg1-FK-maf"/>
                             <constraint firstItem="nPS-Ak-QxF" firstAttribute="leading" secondItem="csQ-9g-T0g" secondAttribute="leading" id="PMm-4v-xIb"/>
+                            <constraint firstItem="zkg-aZ-ru5" firstAttribute="top" secondItem="1Qv-oc-Wml" secondAttribute="bottom" id="PNg-5U-NUv"/>
+                            <constraint firstItem="1Qv-oc-Wml" firstAttribute="trailing" secondItem="csQ-9g-T0g" secondAttribute="trailing" id="Xm8-Ro-hwg"/>
                             <constraint firstItem="csQ-9g-T0g" firstAttribute="bottom" secondItem="zkg-aZ-ru5" secondAttribute="bottom" id="cL5-py-ISh"/>
                             <constraint firstItem="csQ-9g-T0g" firstAttribute="trailing" secondItem="nPS-Ak-QxF" secondAttribute="trailing" id="nRC-KL-suX"/>
+                            <constraint firstItem="1Qv-oc-Wml" firstAttribute="leading" secondItem="csQ-9g-T0g" secondAttribute="leading" id="rbM-65-mlX"/>
                             <constraint firstItem="nPS-Ak-QxF" firstAttribute="top" secondItem="csQ-9g-T0g" secondAttribute="top" id="sZg-w9-NPu"/>
                             <constraint firstItem="csQ-9g-T0g" firstAttribute="trailing" secondItem="zkg-aZ-ru5" secondAttribute="trailing" id="sgL-D5-bso"/>
+                            <constraint firstItem="1Qv-oc-Wml" firstAttribute="top" secondItem="nPS-Ak-QxF" secondAttribute="bottom" id="yzX-bk-mFP"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="csQ-9g-T0g"/>
                     </view>
@@ -48,6 +76,7 @@
                     <connections>
                         <outlet property="calendarView" destination="nPS-Ak-QxF" id="gUw-pP-gRG"/>
                         <outlet property="calendarViewHeightConstraint" destination="oVh-Tf-uu3" id="2JB-QI-gwm"/>
+                        <outlet property="presentsCountLabel" destination="vOD-gf-mEJ" id="e2i-q6-ucC"/>
                         <outlet property="tableView" destination="zkg-aZ-ru5" id="xQf-sE-gih"/>
                     </connections>
                 </viewController>

@@ -30,8 +30,8 @@ class HomeVM {
         
         delegate?.homeVM(didChange: .overlay)
         students = []
-        Functions.functions()
-        var dateFormatter = DateFormatter()
+        
+        let dateFormatter = DateFormatter()
         dateFormatter.dateFormat = "dd.MM.YYYY"
         
         Functions.functions().httpsCallable("getUsers").call(["date": dateFormatter.string(from: date)]) { [weak self] (result, error) in
@@ -39,7 +39,7 @@ class HomeVM {
             if let error = error {
                 self.delegate?.homeVM(didRecieveError: error.localizedDescription)
             } else if let json = result?.data as? [[String: Any]] {
-                self.students = Mapper<Student>().mapArray(JSONArray: json)
+                self.students = Mapper<Student>().mapArray(JSONArray: json).sorted(by: { $0.isExist && !$1.isExist })
             }
             self.delegate?.homeVM(didChange: .idle)
         }

@@ -15,7 +15,12 @@ class LoginVC: UIViewController {
     
     @IBOutlet weak var emailTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
-    @IBOutlet weak var loginButton: UIButton!
+    @IBOutlet weak var loginButton: UIButton! {
+        didSet {
+            loginButton.layer.cornerRadius = 10
+            loginButton.layer.masksToBounds = true
+        }
+    }
     
     var viewModel: LoginVM!
     

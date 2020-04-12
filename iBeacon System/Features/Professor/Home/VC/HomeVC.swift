@@ -13,6 +13,7 @@ import MBProgressHUD
 class HomeVC: BaseVC {
     
     @IBOutlet weak var calendarViewHeightConstraint: NSLayoutConstraint!
+    @IBOutlet weak var presentsCountLabel: UILabel!
     @IBOutlet weak var calendarView: FSCalendar! {
         didSet {
             calendarView.delegate = self
@@ -71,6 +72,7 @@ extension HomeVC: FSCalendarDataSource {
 // MARK:- FSCalendarDelegate
 extension HomeVC: FSCalendarDelegate {
     func calendar(_ calendar: FSCalendar, didSelect date: Date, at monthPosition: FSCalendarMonthPosition) {
+        presentsCountLabel.attributedText = nil
         viewModel.load(for: date)
     }
     
@@ -101,6 +103,13 @@ extension HomeVC: UITableViewDelegate {
 
 extension HomeVC: HomeVMDelegate {
     func homeVM(didLoad students: [Student]) {
+        presentsCountLabel.text = title
+        
+        let text = NSMutableAttributedString()
+        text.append(NSAttributedString(string: "\(students.filter({ $0.isExist }).count)", attributes: [.foregroundColor: Colors.violet]))
+        text.append(NSAttributedString(string: "/\(students.count)", attributes: [.foregroundColor: Colors.mediumGray]))
+        presentsCountLabel.attributedText = text
+
         tableView.reloadData()
     }
     
