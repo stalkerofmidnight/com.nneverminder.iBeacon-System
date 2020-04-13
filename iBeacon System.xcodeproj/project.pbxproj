@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7A04F7DE24435086001E8EF7 /* MainTBC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A04F7DD24435086001E8EF7 /* MainTBC.swift */; };
+		7A4830132444B4BF008E17EB /* MainVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A4830122444B4BF008E17EB /* MainVM.swift */; };
 		7A53F3992433085B00EAF736 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A53F3982433085B00EAF736 /* User.swift */; };
 		7A53F39E2433702100EAF736 /* LoginVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A53F39D2433702100EAF736 /* LoginVM.swift */; };
 		7A53F3A12433707300EAF736 /* Beacon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A53F3A02433707300EAF736 /* Beacon.swift */; };
@@ -44,6 +46,8 @@
 
 /* Begin PBXFileReference section */
 		3DDA90F6E150C636DFC02ED9 /* Pods-iBeacon System.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iBeacon System.debug.xcconfig"; path = "Target Support Files/Pods-iBeacon System/Pods-iBeacon System.debug.xcconfig"; sourceTree = "<group>"; };
+		7A04F7DD24435086001E8EF7 /* MainTBC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTBC.swift; sourceTree = "<group>"; };
+		7A4830122444B4BF008E17EB /* MainVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVM.swift; sourceTree = "<group>"; };
 		7A53F3982433085B00EAF736 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		7A53F39D2433702100EAF736 /* LoginVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVM.swift; sourceTree = "<group>"; };
 		7A53F3A02433707300EAF736 /* Beacon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Beacon.swift; sourceTree = "<group>"; };
@@ -100,6 +104,23 @@
 				890D0503AE72FD1F038EE4F4 /* Pods_iBeacon_System.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7A04F7DC24435060001E8EF7 /* Main Tabbar */ = {
+			isa = PBXGroup;
+			children = (
+				7A4830112444B4A7008E17EB /* VM */,
+				7A04F7DD24435086001E8EF7 /* MainTBC.swift */,
+			);
+			path = "Main Tabbar";
+			sourceTree = "<group>";
+		};
+		7A4830112444B4A7008E17EB /* VM */ = {
+			isa = PBXGroup;
+			children = (
+				7A4830122444B4BF008E17EB /* MainVM.swift */,
+			);
+			path = VM;
 			sourceTree = "<group>";
 		};
 		7A53F3972433085100EAF736 /* Model */ = {
@@ -198,6 +219,7 @@
 		7A8F56F72430ED15009F21A9 /* Student */ = {
 			isa = PBXGroup;
 			children = (
+				7A04F7DC24435060001E8EF7 /* Main Tabbar */,
 				7A8F56F224308A4D009F21A9 /* Profile */,
 				7AED605C242F6BF200142B9A /* Notifications */,
 			);
@@ -490,6 +512,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7A04F7DE24435086001E8EF7 /* MainTBC.swift in Sources */,
 				7A8F57032430F1E9009F21A9 /* HomeTVCell.swift in Sources */,
 				7A8F56F424308A6B009F21A9 /* ProfileTVC.swift in Sources */,
 				E2EA53E023FD35F50077C5BE /* ViewController.swift in Sources */,
@@ -500,6 +523,7 @@
 				7A53F3B5243398B900EAF736 /* Student.swift in Sources */,
 				7AED6061242F6C4900142B9A /* NotificationsVC.swift in Sources */,
 				7A8F56FC2430ED8A009F21A9 /* HomeVC.swift in Sources */,
+				7A4830132444B4BF008E17EB /* MainVM.swift in Sources */,
 				7AED606E242F7A1E00142B9A /* NotificationsEmptyView.swift in Sources */,
 				7A8F56EF24308439009F21A9 /* ASLabel.swift in Sources */,
 				7A53F3992433085B00EAF736 /* User.swift in Sources */,

@@ -21,10 +21,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window = UIWindow(frame: UIScreen.main.bounds)
         if let user = SessionManager.shared.getUser() {
             if user.isProfessor {
-                let vc = UIStoryboard(name: "Student", bundle: nil).instantiateInitialViewController()
+                let vc = UIStoryboard(name: "Professor", bundle: nil).instantiateInitialViewController()
                 self.window?.rootViewController = vc
             } else {
-                let vc = UIStoryboard(name: "Professor", bundle: nil).instantiateInitialViewController()
+                let vc = UIStoryboard(name: "Student", bundle: nil).instantiateInitialViewController()
                 self.window?.rootViewController = vc
             }
         } else {

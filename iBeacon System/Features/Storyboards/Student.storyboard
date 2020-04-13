@@ -126,10 +126,10 @@
             </objects>
             <point key="canvasLocation" x="1179.7101449275362" y="-437.27678571428572"/>
         </scene>
-        <!--Tab Bar Controller-->
+        <!--MainTBC-->
         <scene sceneID="2EF-EF-682">
             <objects>
-                <tabBarController id="A5P-8j-STB" sceneMemberID="viewController">
+                <tabBarController id="A5P-8j-STB" customClass="MainTBC" customModule="iBeacon_System" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="YhS-n0-7nP">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
