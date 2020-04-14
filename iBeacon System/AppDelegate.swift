@@ -17,7 +17,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         FirebaseApp.configure()
-        
+        setupNotifications(for: application)
         window = UIWindow(frame: UIScreen.main.bounds)
         if let user = SessionManager.shared.getUser() {
             if user.isProfessor {
@@ -35,5 +35,31 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         return true
     }
+    
+    
 }
 
+extension AppDelegate: UNUserNotificationCenterDelegate {
+    func setupNotifications(for application: UIApplication) {
+        UNUserNotificationCenter.current().delegate = self
+        
+        let authOptions: UNAuthorizationOptions = [.alert, .badge, .sound]
+        
+        UNUserNotificationCenter.current().requestAuthorization(options: authOptions, completionHandler: {_, _ in
+            
+        })
+        application.registerForRemoteNotifications()
+        
+        Messaging.messaging().delegate = self
+    }
+}
+
+extension AppDelegate: MessagingDelegate {
+    func messaging(_ messaging: Messaging, didReceiveRegistrationToken fcmToken: String) {
+        
+    }
+    
+    func messaging(_ messaging: Messaging, didReceive remoteMessage: MessagingRemoteMessage) {
+        print("qsdasdad")
+    }
+}

@@ -36,7 +36,10 @@ class MainVM {
         
         isProcessing = true
         if let beacon = getBeacon(from: beacon) {
-            Functions.functions().httpsCallable("comeIn").call(["professorID": beacon.professorID]) { (result, error) in
+            let dateFormatter = DateFormatter()
+            dateFormatter.dateFormat = "dd.MM.YYYY"
+            
+            Functions.functions().httpsCallable("comeIn").call(["professorID": beacon.professorID, "date": dateFormatter.string(from: Date())]) { (result, error) in
                 if let _ = result?.data, error == nil {
                     self.delegate?.mainVM(didEnterTo: beacon)
                 }

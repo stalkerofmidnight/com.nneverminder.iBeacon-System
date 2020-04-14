@@ -39,6 +39,8 @@ class NotificationsVC: BaseVC {
         super.viewDidLoad()
         viewModel.delegate = self
         viewModel.getNotifications(state: .overlay)
+        
+        
     }
 }
 

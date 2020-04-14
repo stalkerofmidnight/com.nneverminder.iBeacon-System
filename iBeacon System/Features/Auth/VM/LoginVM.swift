@@ -10,6 +10,7 @@ import Foundation
 import FirebaseFunctions
 import FirebaseAuth
 import ObjectMapper
+import Firebase
 
 protocol LoginVMDelegate: class {
     func loginVM(didLoadUser user: User)
@@ -22,16 +23,23 @@ class LoginVM {
     weak var delegate: LoginVMDelegate?
     
     func getUser(uuid: String) {
-        Functions.functions().httpsCallable("getUser").call { [weak self]  (result, error) in
-            guard let self = self else { return }
-            
+        
+        InstanceID.instanceID().instanceID { (result, error) in
             if let error = error {
-                self.delegate?.loginVM(didRecieveError: error.localizedDescription)
-            } else if let json = result?.data as? [String: Any], let user = Mapper<User>().map(JSON: json) {
-                SessionManager.shared.set(user)
-                self.delegate?.loginVM(didLoadUser: user)
+                print("Error fetching remote instance ID: \(error)")
+            } else if let result = result {
+                Functions.functions().httpsCallable("getUser").call(["token": result.token]) { [weak self]  (result, error) in
+                    guard let self = self else { return }
+                    
+                    if let error = error {
+                        self.delegate?.loginVM(didRecieveError: error.localizedDescription)
+                    } else if let json = result?.data as? [String: Any], let user = Mapper<User>().map(JSON: json) {
+                        SessionManager.shared.set(user)
+                        self.delegate?.loginVM(didLoadUser: user)
+                    }
+                    self.delegate?.loginVM(didChange: .idle)
+                }
             }
-            self.delegate?.loginVM(didChange: .idle)
         }
     }
     

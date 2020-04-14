@@ -29,13 +29,13 @@
 		7A8F57002430EDF3009F21A9 /* Professor.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7A8F56FF2430EDF3009F21A9 /* Professor.storyboard */; };
 		7A8F57032430F1E9009F21A9 /* HomeTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A8F57012430F1E9009F21A9 /* HomeTVCell.swift */; };
 		7A8F57042430F1E9009F21A9 /* HomeTVCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7A8F57022430F1E9009F21A9 /* HomeTVCell.xib */; };
+		7AD94EF4244581150054D1D9 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7AD94EF3244581150054D1D9 /* GoogleService-Info.plist */; };
 		7AED605A242F6B1900142B9A /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AED6059242F6B1800142B9A /* Colors.swift */; };
 		7AED6061242F6C4900142B9A /* NotificationsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AED6060242F6C4900142B9A /* NotificationsVC.swift */; };
 		7AED6064242F6C7800142B9A /* BaseVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AED6063242F6C7800142B9A /* BaseVC.swift */; };
 		7AED606A242F741200142B9A /* Student.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7AED6069242F741200142B9A /* Student.storyboard */; };
 		7AED606E242F7A1E00142B9A /* NotificationsEmptyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AED606D242F7A1E00142B9A /* NotificationsEmptyView.swift */; };
 		C87C354261CF4C46FAE0B645 /* Pods_iBeacon_System.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 890D0503AE72FD1F038EE4F4 /* Pods_iBeacon_System.framework */; };
-		E252A07B23FD392400E331A2 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E252A07A23FD392300E331A2 /* GoogleService-Info.plist */; };
 		E252A07D23FF98D700E331A2 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E252A07C23FF98D700E331A2 /* LoginVC.swift */; };
 		E2EA53DC23FD35F50077C5BE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2EA53DB23FD35F50077C5BE /* AppDelegate.swift */; };
 		E2EA53E023FD35F50077C5BE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2EA53DF23FD35F50077C5BE /* ViewController.swift */; };
@@ -68,6 +68,8 @@
 		7A8F56FF2430EDF3009F21A9 /* Professor.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Professor.storyboard; sourceTree = "<group>"; };
 		7A8F57012430F1E9009F21A9 /* HomeTVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTVCell.swift; sourceTree = "<group>"; };
 		7A8F57022430F1E9009F21A9 /* HomeTVCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeTVCell.xib; sourceTree = "<group>"; };
+		7AD94EF024457D960054D1D9 /* iBeacon System.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "iBeacon System.entitlements"; sourceTree = "<group>"; };
+		7AD94EF3244581150054D1D9 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		7AED6059242F6B1800142B9A /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		7AED6060242F6C4900142B9A /* NotificationsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationsVC.swift; sourceTree = "<group>"; };
 		7AED6063242F6C7800142B9A /* BaseVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseVC.swift; sourceTree = "<group>"; };
@@ -75,7 +77,6 @@
 		7AED606D242F7A1E00142B9A /* NotificationsEmptyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationsEmptyView.swift; sourceTree = "<group>"; };
 		890D0503AE72FD1F038EE4F4 /* Pods_iBeacon_System.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iBeacon_System.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9035D0819FB947E6D56F36FA /* Pods-iBeacon System.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iBeacon System.release.xcconfig"; path = "Target Support Files/Pods-iBeacon System/Pods-iBeacon System.release.xcconfig"; sourceTree = "<group>"; };
-		E252A07A23FD392300E331A2 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		E252A07C23FF98D700E331A2 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 		E2EA53D823FD35F50077C5BE /* iBeacon System.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iBeacon System.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2EA53DB23FD35F50077C5BE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -367,6 +368,7 @@
 		E2EA53DA23FD35F50077C5BE /* iBeacon System */ = {
 			isa = PBXGroup;
 			children = (
+				7AD94EF024457D960054D1D9 /* iBeacon System.entitlements */,
 				7A53F3A62433787C00EAF736 /* Service */,
 				7A53F3972433085100EAF736 /* Model */,
 				7A8F56ED2430841E009F21A9 /* ASKit */,
@@ -377,7 +379,7 @@
 				E2EA53E423FD35F60077C5BE /* Assets.xcassets */,
 				E2EA53E623FD35F60077C5BE /* LaunchScreen.storyboard */,
 				E2EA53E923FD35F60077C5BE /* Info.plist */,
-				E252A07A23FD392300E331A2 /* GoogleService-Info.plist */,
+				7AD94EF3244581150054D1D9 /* GoogleService-Info.plist */,
 				E2EA53D923FD35F50077C5BE /* Products */,
 			);
 			path = "iBeacon System";
@@ -453,10 +455,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				E2EA53E823FD35F60077C5BE /* LaunchScreen.storyboard in Resources */,
+				7AD94EF4244581150054D1D9 /* GoogleService-Info.plist in Resources */,
 				7AED606A242F741200142B9A /* Student.storyboard in Resources */,
 				7A8F57042430F1E9009F21A9 /* HomeTVCell.xib in Resources */,
 				7A8F56EA2430100E009F21A9 /* NotificationTVCell.xib in Resources */,
-				E252A07B23FD392400E331A2 /* GoogleService-Info.plist in Resources */,
 				E2EA53E523FD35F60077C5BE /* Assets.xcassets in Resources */,
 				E2EA53E323FD35F50077C5BE /* Auth.storyboard in Resources */,
 				7A8F57002430EDF3009F21A9 /* Professor.storyboard in Resources */,
@@ -682,15 +684,18 @@
 			baseConfigurationReference = 3DDA90F6E150C636DFC02ED9 /* Pods-iBeacon System.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "iBeacon System/iBeacon System.entitlements";
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = P69BU7AB3U;
+				DEVELOPMENT_TEAM = T89ZE8K9FP;
 				INFOPLIST_FILE = "iBeacon System/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.gn.iBeacon-System";
+				PRODUCT_BUNDLE_IDENTIFIER = com.nneverminder.iBeaconSystem;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -701,14 +706,15 @@
 			baseConfigurationReference = 9035D0819FB947E6D56F36FA /* Pods-iBeacon System.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "iBeacon System/iBeacon System.entitlements";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = P69BU7AB3U;
+				DEVELOPMENT_TEAM = T89ZE8K9FP;
 				INFOPLIST_FILE = "iBeacon System/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.gb.iBeacon-System";
+				PRODUCT_BUNDLE_IDENTIFIER = com.nneverminder.iBeaconSystem;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

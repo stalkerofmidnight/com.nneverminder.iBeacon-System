@@ -8,7 +8,7 @@
 
 import Foundation
 import ObjectMapper
-import FirebaseAuth
+import Firebase
 
 protocol ProfileVMDelegate: class {
     func profileVMDidLogOut()
