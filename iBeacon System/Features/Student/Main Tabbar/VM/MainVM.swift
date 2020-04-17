@@ -45,12 +45,14 @@ class MainVM {
                 }
                 self.isProcessing = false
             }
+        } else {
+            self.isProcessing = false
         }
     }
     
     private func getBeacon(from beacon: CLBeacon) -> Beacon?{
         return beacons.filter({ $0.major == beacon.major.intValue &&
-            $0.uuid == beacon.uuid.uuidString &&
+            $0.uuid.uppercased() == beacon.uuid.uuidString &&
             $0.minor == beacon.minor.intValue }).first
     }
 }

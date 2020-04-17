@@ -56,9 +56,20 @@ extension MainTBC: CLLocationManagerDelegate {
         }
     }
     
+    func stopScanning() {
+        for beacon in self.viewModel?.beacons ?? [] {
+            if let uuid = UUID(uuidString: beacon.uuid) {
+                let contraint = CLBeaconIdentityConstraint(uuid: uuid, major: CLBeaconMajorValue(beacon.major), minor: CLBeaconMajorValue(beacon.minor))
+                let beaconRegion = CLBeaconRegion(beaconIdentityConstraint: contraint, identifier: "Professors")
+                
+                locationManage.stopMonitoring(for: beaconRegion)
+                locationManage.stopRangingBeacons(satisfying: contraint)
+            }
+        }
+    }
     
     func locationManager(_ manager: CLLocationManager, didRangeBeacons beacons: [CLBeacon], in region: CLBeaconRegion) {
-        let nearBeacons = beacons.filter({ $0.proximity == .near })
+        let nearBeacons = beacons.filter({ $0.proximity == .immediate })
         if let beacon = nearBeacons.first {
             //TODO: Make request to come in!
             viewModel?.comeIn(to: beacon)
@@ -71,6 +82,7 @@ extension MainTBC: MainVMDelegate {
     func mainVM(didEnterTo beacon: Beacon) {
         DispatchQueue.main.async {
             self.showAlert(with: "Success Entered")
+            self.stopScanning()
         }
     }
     
