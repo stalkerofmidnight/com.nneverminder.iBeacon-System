@@ -12,7 +12,7 @@ import ObjectMapper
 struct Notification: Mappable {
     
     var id: String = ""
-    var date: TimeInterval = 0.0
+    var date: String = ""
     var text: String = ""
     
     init?(map: Map) {
@@ -23,11 +23,5 @@ struct Notification: Mappable {
         id <- map["id"]
         date <- map["date"]
         text <- map["text"]
-    }
-    
-    func getStringDate() -> String {
-        let dateFormatter = DateFormatter()
-        dateFormatter.dateFormat = "HH:mm, dd MMMM YYYY"
-        return dateFormatter.string(from: Date(timeIntervalSince1970: date))
     }
 }

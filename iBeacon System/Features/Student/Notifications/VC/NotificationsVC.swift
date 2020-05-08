@@ -38,9 +38,11 @@ class NotificationsVC: BaseVC {
     override func viewDidLoad() {
         super.viewDidLoad()
         viewModel.delegate = self
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
         viewModel.getNotifications(state: .overlay)
-        
-        
     }
 }
 
@@ -60,7 +62,7 @@ extension NotificationsVC: UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: NotificationTVCell.identifier) as! NotificationTVCell
         let notification = viewModel.notifications[indexPath.row]
-        cell.dateLabel.text = notification.getStringDate()
+        cell.dateLabel.text = notification.date
         cell.contentLabel.text = notification.text
         return cell
     }

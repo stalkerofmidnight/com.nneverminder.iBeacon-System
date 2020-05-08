@@ -12,7 +12,7 @@ import FirebaseFunctions
 
 protocol MainVMDelegate: class {
     func mainVM(didChangeProcessing state: Bool)
-    func mainVM(didEnterTo beacon: Beacon)
+    func mainVM(didEnterTo beacon: Beacon, message: String)
 }
 
 class MainVM {
@@ -40,8 +40,8 @@ class MainVM {
             dateFormatter.dateFormat = "dd.MM.YYYY"
             
             Functions.functions().httpsCallable("comeIn").call(["professorID": beacon.professorID, "date": dateFormatter.string(from: Date())]) { (result, error) in
-                if let _ = result?.data, error == nil {
-                    self.delegate?.mainVM(didEnterTo: beacon)
+                if let json = result?.data as? [String: Any], let message = json["message"] as? String, error == nil {
+                    self.delegate?.mainVM(didEnterTo: beacon, message: message)
                 }
                 self.isProcessing = false
             }

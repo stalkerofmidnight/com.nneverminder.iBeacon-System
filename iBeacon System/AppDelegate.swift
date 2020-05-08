@@ -52,6 +52,10 @@ extension AppDelegate: UNUserNotificationCenterDelegate {
         
         Messaging.messaging().delegate = self
     }
+    
+    func userNotificationCenter(_ center: UNUserNotificationCenter, willPresent notification: UNNotification, withCompletionHandler completionHandler: @escaping (UNNotificationPresentationOptions) -> Void) {
+        completionHandler(.alert)
+    }
 }
 
 extension AppDelegate: MessagingDelegate {

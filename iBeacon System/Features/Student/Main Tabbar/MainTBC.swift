@@ -79,9 +79,12 @@ extension MainTBC: CLLocationManagerDelegate {
 
 extension MainTBC: MainVMDelegate {
     
-    func mainVM(didEnterTo beacon: Beacon) {
+    func mainVM(didEnterTo beacon: Beacon, message: String) {
         DispatchQueue.main.async {
-            self.showAlert(with: "Success Entered")
+            self.showAlert(with: message)
+            if let controller = self.selectedViewController as? NotificationsVC {
+                controller.viewModel.getNotifications(state: .refresh)
+            }
             self.stopScanning()
         }
     }
