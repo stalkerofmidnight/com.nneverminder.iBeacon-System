@@ -18,7 +18,7 @@ protocol MainVMDelegate: class {
 class MainVM {
     
     weak var delegate: MainVMDelegate?
-    
+    var isComeIn: Bool = false
     private var isProcessing: Bool {
         didSet {
             delegate?.mainVM(didChangeProcessing: isProcessing)
@@ -33,6 +33,7 @@ class MainVM {
     
     func comeIn(to beacon: CLBeacon) {
         guard !isProcessing else { return }
+        guard !isComeIn else { return }
         
         isProcessing = true
         if let beacon = getBeacon(from: beacon) {
@@ -42,6 +43,7 @@ class MainVM {
             Functions.functions().httpsCallable("comeIn").call(["professorID": beacon.professorID, "date": dateFormatter.string(from: Date())]) { (result, error) in
                 if let json = result?.data as? [String: Any], let message = json["message"] as? String, error == nil {
                     self.delegate?.mainVM(didEnterTo: beacon, message: message)
+                    self.isComeIn = true
                 }
                 self.isProcessing = false
             }

@@ -38,6 +38,7 @@ class NotificationsVC: BaseVC {
     override func viewDidLoad() {
         super.viewDidLoad()
         viewModel.delegate = self
+        NotificationCenter.default.addObserver(self, selector: #selector(refresh), name: Foundation.Notification.Name("NewNotification"), object: nil)
     }
     
     override func viewWillAppear(_ animated: Bool) {

@@ -82,9 +82,7 @@ extension MainTBC: MainVMDelegate {
     func mainVM(didEnterTo beacon: Beacon, message: String) {
         DispatchQueue.main.async {
             self.showAlert(with: message)
-            if let controller = self.selectedViewController as? NotificationsVC {
-                controller.viewModel.getNotifications(state: .refresh)
-            }
+            NotificationCenter.default.post(name: Foundation.Notification.Name("NewNotification"), object: nil)
             self.stopScanning()
         }
     }
